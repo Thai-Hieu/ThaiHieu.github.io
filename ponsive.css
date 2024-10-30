@@ -1,0 +1,129 @@
+/* pc */ 
+/* @media (min-width: 64em) { */
+
+
+/* tablet and mobile*/
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    /* .slider {
+        margin-right: -76px;
+    } */
+     .main {
+        overflow: hidden;
+     }
+     #header .search-btn {
+        margin-right: 0px;
+     }
+    #nav .subnav a { 
+        padding: 10px 12px;
+    } 
+    .places-buy-btn-tablet {
+        padding: 15px 16px;
+    }
+    .contact-input-tablet {
+        padding: 15px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    } 
+    .contact-input-tablet:hover {
+        border: 1px solid #333;
+    }
+    .contact-btn-tablet {
+        padding: 18px 24px;
+        font-size: 18px;
+    }
+    .footer .social-list-tablet {
+        font-size: 50px;
+    }
+    .footer .social-list-tablet a {
+        margin: 0 8px;
+    }
+    .footer .copyright-tablet {
+        font-size: 35px;
+        padding: 12px 0;
+    }
+    .content .content-section {
+        padding: 64px 16px;
+        max-width: 100%;
+        width: 800px;
+    }
+}  
+   
+/* tablet */
+   /* @media (min-width: 740px) and (max-width: 1023px) {
+    html {
+    }
+
+}    */
+/* mobile */
+@media (max-width: 46.1875em) { 
+.main {
+    overflow: hidden;
+}
+#header .menu-btn-mobile{
+    display: block;
+}
+#header .search-btn {
+    display: none;
+}
+#header {
+    overflow: hidden;
+}
+#nav > li {
+    display: block;
+}
+#nav > li:first-child {
+    display: inline-block;
+}
+#nav {
+    display: block;
+}
+#nav .subnav {
+    position: initial;
+    background-color: #333;
+}
+#nav .subnav a{
+    color: #fff;
+    padding: 5px 41px;
+}
+#nav li a {
+    padding: 1px 24px;
+}
+.content .member-item1 {
+    margin-top: 32px;
+    width: 100%;
+}
+.content .member-avatar {
+    width: 60%;
+}
+.content .member-mobile {
+    margin-top: 32px;
+}
+.places-mobile {
+    width: 100%;
+}
+.places-buy-btn-mobile {
+    width: 100%;
+    text-align: center;
+}
+.contact-input-mobile {
+    width: 100%;
+    margin-right: 165px;
+}
+.contact-input-mobile1 {
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+.contact-btn-mobile {
+    width: 96%;
+    margin-bottom: 80px;
+    margin-left: 9px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.contact-item-mobile {
+    margin-left: 14px;
+}
+.contact-content-input-mobile {
+    margin-top: 0;
+}
+}

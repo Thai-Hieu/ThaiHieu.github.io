@@ -1,0 +1,539 @@
+/*reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.clear {
+    clear: both;
+}
+/* common */
+.text-while {
+    color: #fff !important;
+}
+.text-center {
+    text-align: center !important;
+}
+/*
+1 vi tri
+2 kich thuoc 
+3 kieu chu 
+4 mau sac
+*/
+/* dung chung khi can  */
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding: 0 8px;
+}
+.col-third{
+width: 33.33333%;
+}
+.col-hard {
+width: 50%;
+} 
+/* wrapper */
+.wrapper{
+    /* khi co lai hop moi ben 16px */
+    max-width: calc(100%-32px) !important; 
+ }  
+/* header */
+#header{
+height: 46px;
+background-color: #333;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+#nav {
+display: inline-block;
+}
+#nav > li { 
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+#nav .subnav {
+    position: absolute;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 24px;
+    line-height: 38px;
+}
+#nav li:hover .subnav{
+    display: block;
+    color: #333;
+}
+.subnav li:hover a,
+#nav > li:hover > a {
+    background-color:  rgb(204, 204, 204);
+    color: #333;
+}
+
+#nav > li > a{
+    color:#fff;
+    text-transform: uppercase;
+}
+.nav li i {
+    font-size: 30px;
+    line-height: 46px;
+} 
+
+#nav li a {  
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+.nav li:hover {
+    background-color:  rgb(204, 204, 204);
+    color: #333;
+}
+ /* icon 1 */
+ #header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .search-btn {
+    float: right;
+    padding: 0 21px; 
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+/* neu truoc co hem class ch thi se duoc uu tien hon */
+ /* icon 2 */
+#header .menu-btn-mobile {
+    float: right;
+    padding: 0 21px;
+    line-height: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.menu-btn-mobile:hover{
+    background-color: #ccc;
+}
+.menu-btn-mobile:hover .menu-icon {
+    color: #000;
+}
+.menu-icon{
+    color: #fff;
+    font-size: 20px;
+}
+/* slider */
+.slider{
+position: relative;
+margin-top: 46px;
+padding-top: 50%;
+background-image: url(https://www.w3schools.com/w3images/ny.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top center;;
+}
+
+.text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    /* width: 100%; 
+    right: 0;
+    left: 0; cung co the can giua */
+}
+
+.text-content .text-heading {
+font-weight: 500;
+font-size: 24px;
+}
+
+.text-content .text-decription {
+font-size: 15px;
+margin-top: 25px;
+text-shadow: 0 0 2px #000;
+}
+.content{                   
+}
+.content .content-section {
+    padding: 70px 0 112px;
+    max-width: 100%;/*tren trai phai duwoi*/
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 16px;
+    padding-left: 16px; /*xoa khoang trang hoac overflow: hiden*/
+  }
+.content .section-heading{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4px;
+}
+.content .section-i{
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0;
+    opacity: 0.5;
+    font-style: italic;
+}
+.content .section-sub-heading {
+font-size: 15px;
+margin-top: 25px;
+text-align: justify;
+line-height: 1.6;
+}
+
+.content .member-list {
+    margin-top: 48px;
+}
+.content .member-item{
+    float: left; 
+    width: 33.33333%;
+    text-align: center;
+}
+.content .member-name {
+    font-size: 15px;
+}
+.content .member-avatar {
+  width: 155px;
+  margin-top: 15px;  
+  border-radius: 4px;
+}
+
+/* teur section */
+ .tour-section {
+    background-color: #333;
+}
+.content .tour-section {
+    background-color: #000;
+}
+.content .ticket-list {
+    margin-top: 40px;
+   background-color: #fff;
+}
+.content .ticket-list li {
+   border-bottom:  1px solid rgb(221, 221, 221);
+   padding: 8px 16px;
+   color: #757575;
+   list-style-type: none !important;
+   font-size: 15px;
+   line-height: 1.5;
+}
+.ticket-list .sold-out {
+    background-color: #f44336;
+    padding: 3px 4px;
+    color: #fff;
+    margin-left: 16px;
+}
+.ticket-list .sold-outt {
+    background-color: #f44336;
+    padding: 3px 4px;
+    color: #fff;
+    margin-left: 36px;
+}
+.content .quancity {
+    text-align: center;
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    line-height: 24px;/*can giua theo chieu cao bawng chieu cao cuar vat*/
+     padding: 1px 0 3px; 
+    /* neu muon ngang vs vat the thi cho margin am */
+} 
+/* places */
+.places-list{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 16px; 
+/* nuon hai vien thang nhau thi su dung margin am */
+}
+.places-item1 {
+    margin-top: 16px;
+}
+.places-item {
+    float: left;
+    padding: 0 8px;
+    width: 33.33333%;
+}
+.places-img{
+width: 100%;
+display: block;
+}
+.places-img:hover {
+    opacity: 0.6;
+}
+.places-content{
+background-color: #fff;
+padding: 16px;
+font-size: 15px;
+}
+.places-heading{
+color: #000 !important;
+font-size: 15px;
+font-weight: 600;
+}
+.places-time{
+margin-top: 15px;
+color: #757575;
+}
+.places-desc{
+margin-top: 15px;
+line-height: 1.4;
+}
+.places-buy-btn{
+    border: none;
+text-decoration: none;
+padding: 12px 16px;
+margin-top: 15px;
+color: #fff;
+background-color: #000;
+display: inline-block;
+}
+.places-buy-btn:hover {
+background-color: rgb(204, 204, 204);
+color: #000;
+} 
+
+/* modal */
+ .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;  
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: none; /*display: flex;*/
+}
+.modal.open {
+    display: flex;
+}
+.modal-body {
+    padding: 16px;
+}
+.modal-contaier {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+.modal-header {
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+.modal-header .ti-bag {
+    margin-right: 16px;
+}
+.modal-close .ti-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    font-size: 20px;
+}
+.ti-close:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-label {
+    display: block;
+    margin-bottom: 12px;
+}
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.buy-tickets {
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+     text-transform: uppercase; /*chu viet dam*/
+    border: none;
+    padding: 18px;
+}
+.buy-tickets:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.modal-body2 {
+    padding: 30px;
+    
+}
+.modal-footer {
+    padding-top: 28px;
+    float: right;
+    margin-right: -28px;
+    /* margin-top: 12px; neu muon day xuong  */
+} 
+.modal-footer a {
+color: rgb(33, 150, 243);
+}
+.modal-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    margin: 16px 0;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: -29px;
+}
+.fa-fa-remove{
+    position: absolute;
+    font-size: 15px;
+}
+.modal-btn:hover {
+    background-color: #ddd;
+}
+@keyframes modalFadeIn {
+     from {
+        transform: translateY(-140px);
+        opacity: 0;
+    }
+     to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*contact */
+.contact-item {
+    display: inline-block;
+    padding-top: 32px;   
+}
+.contact-icon {
+    width: 30px;
+    font-size: 20px;
+}
+.contact-p {
+    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 16px !important;
+}
+.contact-p a {
+    color: #101aef;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.contact-p a:hover {
+    opacity: 1;
+}
+.contact-content{
+ float: right; 
+}
+.contact-content-input {
+    margin-top: 25px;
+    margin-right: -16px; 
+}
+
+.contact-input{
+padding: 10px 16px;   
+width: 100%;
+margin-right: 93px;
+}
+.contact-input2{
+    width: 100%;
+    padding: 10px 16px;  
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.contact-button {
+    float: right;
+    margin: 0px 0px 116px 16px;
+    color: #fff;
+    background-color: #000;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+
+}
+.contact-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+/* map-section */
+ .map-section img {
+   width: 100%; 
+   filter: grayscale(50%);
+   display: inline-block;
+}
+
+/* footer section */
+.footer{
+padding: 64px 16px;
+text-align: center;
+}
+.footer .social-list{
+font-size: 24px;
+}
+.footer .social-list a {
+text-decoration: none;
+color: rgba(0, 0, 0, 0.5);
+}
+.footer .social-list a:hover {
+color: rgba(0, 0, 0, 0.3);
+}
+.footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer .copyright a {
+    color: rgba(0, 0, 0, 0.5);
+}
+.ppp {
+    display: inline-block;
+}
+.hi {
+    display: none;
+    text-align: right;
+    color: rgb(12, 218, 12);
+}
+.ppp:hover .hi{
+    display: block;
+}
+.footer .copyright a:hover {
+    color: rgba(0, 0, 0, 0.3); 
+}
